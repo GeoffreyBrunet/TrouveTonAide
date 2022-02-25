@@ -3,6 +3,7 @@
     "name": "TrouveTonAide",
     "slug": "TrouveTonAide",
     "version": "1.0.0",
+    "jsEngine": "hermes",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,13 +18,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.geoffreybrunet.trouvetonaide"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.geoffreybrunet.trouvetonaide"
     },
     "web": {
       "favicon": "./assets/favicon.png"
