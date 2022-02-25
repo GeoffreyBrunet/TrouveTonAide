@@ -1,11 +1,16 @@
+import { useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useState } from "react";
 import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native"
+import { RouteParams } from "../navigation/RootNavigator";
 
 const HomeScreen = () => {
   const [doctor, setDoctor] = useState('');
 
+  const navigation = useNavigation<NativeStackNavigationProp<RouteParams>>();
+
   const searchDocs = () => {
-    console.log("search docs");
+    navigation.navigate('FilterDocs');
   }
 
   return (
